@@ -8,8 +8,8 @@
     <body style="background-color: #888888;">
         <header>
             <div>
-                <a>Техномарт</a>
-                <a><img src="svg/icon-search.svg" width="17" height="17" alt="Поиск">Поиск</a>
+                <a href="index.html">Техномарт</a>
+                <a href="blank.html"><img src="svg/icon-search.svg" width="17" height="17" alt="Поиск">Поиск</a>
                 <ul>
                     <li>
                         <a href="blank.html">
@@ -24,7 +24,7 @@
                         </a>
                     </li>
                 </ul>
-                <a>Офорить заказ</a>
+                <a href="blank.html">Офорить заказ</a>
             </div>
             <div>
                 <p>Интернет-магазин строительных материалов и инструментов для рем</p>
@@ -53,7 +53,7 @@
             </div>
         </header>
         <main>
-            <h1>Магазин "Техномарт"</h1>
+            <h1 class="visually-hidden">Магазин "Техномарт"</h1>
             <section>
                 <ul>
                     <li>
@@ -87,11 +87,12 @@
                     <!-- Слайдер-->
                     <li>
                         <article>
-                            <span><img src="svg/icon-left.svg" width="22" height="40" alt="Стрелка влево">Стрелка влево</span>
+                            <button type="button"><img src="svg/icon-left.svg" width="22" height="40" alt="Стрелка влево">Стрелка
+                                влево</button>
                             <img src="img/slider-item-1.jpg" width="620" height="266"
                                  alt="Элемент слайдера на главном баннере">
-                            <span><img src="svg/icon-right.svg" width="22" height="40" alt="Стрелка вправо">Стрелка
-                                вправо</span>
+                            <button type="button"><img src="svg/icon-right.svg" width="22" height="40" alt="Стрелка вправо">Стрелка
+                                вправо</button>
                             <div>
                                 <h3>Перфораторы</h3>
                                 <p>Настоящие мужские игрушки</p>
@@ -303,11 +304,11 @@
                     <!-- карта -->
                     <img src="img/map.png" width="300" height="158" alt="Авторизоваться">
                 </div>
-                <button>Заблудились? Напишите нам!</button>
+                <button type="button">Заблудились? Напишите нам!</button>
             </section>
         </main>
         <footer>
-            <a>Техноиарт</a>
+            <a href="index.html">Техноиарт</a>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
             <nav>
                 <ul>
@@ -339,5 +340,11 @@
                 <p>Разработано — <a href="https://htmlacademy.ru">htmlacademy.ru</a></p>
             </div>
         </footer>
+        <div id="map-popup">
+            <button type="button" aria-label="Закрыть всплывающее окно">
+                <img src="svg/icon-close.svg" width="21" height="21" alt="Закрыть высплывашку">
+            </button>
+            <img src="img/full-map.jpg" width="970" height="477" alt="Карта">
+        </div>
     </body>
 </html>
